@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e0e5ec;
+}
+
+/* 新拟物按钮基础样式 */
+.neu-btn {
+  @apply bg-neu-bg rounded-full transition-all duration-150 cursor-pointer;
+  box-shadow: 6px 6px 12px #a3b1c6, -6px -6px 12px #ffffff;
+}
+
+.neu-btn:hover {
+  box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
+}
+
+.neu-btn:active {
+  box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+}
+
+/* 小尺寸新拟物按钮 */
+.neu-btn-sm {
+  @apply bg-neu-bg rounded-full transition-all duration-150 cursor-pointer;
+  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+}
+
+.neu-btn-sm:hover {
+  box-shadow: 2px 2px 4px #a3b1c6, -2px -2px 4px #ffffff;
+}
+
+.neu-btn-sm:active {
+  box-shadow: inset 2px 2px 4px #a3b1c6, inset -2px -2px 4px #ffffff;
+}
+
+/* 新拟物凹陷容器 */
+.neu-inset {
+  @apply bg-neu-bg rounded-full;
+  box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+}
+
