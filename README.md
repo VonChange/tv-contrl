@@ -2,7 +2,7 @@
 
 一个基于 Tauri + Vue 3 的 Mac/Windows 桌面应用，通过 ADB 命令控制 Android TV 设备。
 
-![界面预览](controll.jpg)
+![界面预览](tv_contrl.png)
 
 ## ✨ 功能
 
